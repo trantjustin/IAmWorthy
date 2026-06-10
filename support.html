@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support &middot; I Am Worthy</title>
+<meta name="description" content="Help and FAQ for the I Am Worthy Lock Screen widget app.">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="_shared.css">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+    <a href="index.html"><img class="icon" src="icon.png" alt="I Am Worthy app icon"></a>
+    <h1>Support</h1>
+    <p class="tagline">Setup tips, troubleshooting, and how to get in touch.</p>
+</header>
+
+<h2>Getting started</h2>
+
+<details class="faq" open>
+    <summary>How do I add the widget to my Lock Screen?</summary>
+    <p>Long-press your Lock Screen &rarr; tap <strong>Customize</strong> &rarr; tap the Lock Screen &rarr; tap the date pill above the clock &rarr; choose <strong>I Am</strong>. Tap <strong>Done</strong> and your Lock Screen date now shows a daily affirmation.</p>
+</details>
+
+<details class="faq">
+    <summary>The widget slot shows "I Am" but the message is blank or truncated.</summary>
+    <p>The inline widget shares the date slot, so the combined text — <em>Wed 23 Apr | I am worthy</em> — has to fit on one line. On the smallest iPhones a very long date (like <em>Wednesday 23 September</em>) can crowd the message. Make sure your date format in iOS Settings &rarr; General &rarr; Language &amp; Region is set to the short style.</p>
+</details>
+
+<details class="faq">
+    <summary>How often does the message change?</summary>
+    <p>Once per day, at midnight. Every device shows the same affirmation on the same date — the selection is deterministic, not random, so it's consistent whether you reinstall the app or switch devices.</p>
+</details>
+
+<h2>Custom affirmations</h2>
+
+<details class="faq">
+    <summary>How do I add my own affirmations?</summary>
+    <p>Open the app, tap <strong>Custom</strong>, and use the + button to add a message. Keep it short — the date slot is narrow, and longer messages will be truncated by iOS.</p>
+</details>
+
+<details class="faq">
+    <summary>Can I use only my custom affirmations?</summary>
+    <p>Yes. In the app, toggle off <strong>Include built-in affirmations</strong> and only your custom messages will appear in the rotation.</p>
+</details>
+
+<h2>Troubleshooting</h2>
+
+<details class="faq">
+    <summary>The message hasn't updated since yesterday.</summary>
+    <p>The widget pre-bakes a 7-day timeline at midnight. If your device was off or in low-power mode at midnight, iOS may delay the reload. Open the I Am Worthy app once — this forces a timeline refresh — then lock your screen.</p>
+</details>
+
+<details class="faq">
+    <summary>I don't see "I Am" in the widget picker.</summary>
+    <p>Make sure the app is fully installed and has been opened at least once. If it still doesn't appear, try restarting your iPhone. Occasionally iOS needs a reboot to register a newly installed widget extension.</p>
+</details>
+
+<h2>Privacy &amp; data</h2>
+
+<details class="faq">
+    <summary>Does the app collect any data?</summary>
+    <p>Only anonymous usage signals (app launched, custom affirmation added/removed) sent to <a href="https://telemetrydeck.com">TelemetryDeck</a>. The text of your affirmations is never transmitted. See the <a href="privacy.html">privacy page</a> for full details.</p>
+</details>
+
+<details class="faq">
+    <summary>What permissions does the app need?</summary>
+    <p>None. I Am Worthy requests no access to contacts, photos, location, microphone, camera, health data, notifications, or tracking identifiers. It only reads the current date from iOS.</p>
+</details>
+
+<h2>System requirements</h2>
+
+<details class="faq">
+    <summary>What iPhone and iOS version do I need?</summary>
+    <p>I Am Worthy requires <strong>iOS 17.0 or later</strong> on iPhone. The Lock Screen widget slot used by the app (<code>.accessoryInline</code>) is not available on iPad or Apple Watch.</p>
+</details>
+
+<hr>
+
+<h2>Still need help?</h2>
+<div class="card">
+    <p>
+        If you're having trouble, please open a GitHub issue. Include your iOS version, iPhone model, and a description of what happened.
+    </p>
+    <p>
+        <a class="cta" href="https://github.com/trantjustin/i-am-worthy/issues/new">Open an issue</a>
+        <a class="cta secondary" href="index.html">Back to home</a>
+    </p>
+</div>
+
+<footer>
+    <p>Last updated 10 Jun 2026</p>
+    <p>
+        <a href="index.html">Home</a> &nbsp;&middot;&nbsp;
+        <a href="privacy.html">Privacy</a>
+    </p>
+    <p>&copy; I Am Worthy</p>
+</footer>
+
+</div>
+</body>
+</html>
